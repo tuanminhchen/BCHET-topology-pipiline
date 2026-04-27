@@ -5,13 +5,13 @@ This repository contains the code and processed data used for the manuscript:
 **"A Budget–Topology Structure Links Natural and Designed Proteins Across Species"**.
 
 ## 2. Main quantities
-- **B**: species-level transcript/genomic budget proxy (V7-style: `intron_over_cds_prior` when per-gene GTF is unavailable).
-- **I**: topological load from a Cα contact-span graph (**operational proxy**, not Shannon information).
-- **η**: η = B / I.
+- **I**: species-level intron-derived budget proxy (V7-style: `intron_over_cds_prior` when per-gene GTF is unavailable).
+- **T**: topological load from a Cα contact-span graph (**operational proxy**, not Shannon information).
+- **η**: η = I / T.
 
 Clarifications:
-- **I** is an operational topological load proxy derived from AlphaFold coordinates under explicit contact rules.
-- **B** is a **species-level prior**, not a per-gene causal measurement.
+- **T** is an operational topological load proxy derived from AlphaFold coordinates under explicit contact rules.
+- **I** is a **species-level prior**, not a per-gene causal measurement.
 
 ## 3. Data sources
 - AlphaFold DB: https://alphafold.ebi.ac.uk/
