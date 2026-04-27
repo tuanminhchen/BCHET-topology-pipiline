@@ -1,52 +1,84 @@
 # BCHET Topology Pipeline
 
-## 1. Overview
-This repository contains the code and processed data used for the manuscript:
-**"A Budget–Topology Structure Links Natural and Designed Proteins Across Species"**.
+## Overview
+This repository contains code, processed tables, and figure scripts for the BCHET framework:
 
-## 2. Main quantities
-- **I**: species-level intron-derived budget proxy (V7-style: `intron_over_cds_prior` when per-gene GTF is unavailable).
-- **T**: topological load from a Cα contact-span graph (**operational proxy**, not Shannon information).
-- **η**: η = I / T.
+**Budget-Constraint Hypothesis of Emergent Topology (BCHET)**  
+Exons encode protein material, while intron architecture provides a genome-level budget layer associated with non-local folding topology.
 
-Clarifications:
-- **T** is an operational topological load proxy derived from AlphaFold coordinates under explicit contact rules.
-- **I** is a **species-level prior**, not a per-gene causal measurement.
+The current implementation is designed for falsifiable, cross-system tests rather than narrative-only interpretation.
 
-## 3. Data sources
+## Core Quantities (Current Notation)
+- **T_p**: protein topological load from non-local C-alpha contact spans (operational structural proxy).
+- **I_{s,p}**: intron-derived budget proxy for protein `p` in species `s`.
+- **eta_{s,p} = I_{s,p} / T_p**.
+
+In this repository:
+- `I_{s,p} = r_s * 3 * L_aa,p`
+- `r_s` is the species-level intron-over-CDS prior.
+
+### Important Clarifications
+- `T_p` is **not** Shannon information and **not** a full thermodynamic model; it is an operational non-local closure load proxy.
+- `I_{s,p}` is a **species-level prior-based proxy**, not a direct per-gene intron count in the current release.
+- Results should be interpreted as evidence for a structured budget-topology association, with controls against simple algebraic or length-only explanations.
+
+## Contact and Topology Rules
+The BCHET topology pipeline uses:
+- C-alpha residue coordinates (AlphaFold/PDB structures)
+- confidence filter: `pLDDT >= 70` (for AlphaFold)
+- contact: `d_ij <= 8 Angstrom`
+- non-local: `|seq_idx_i - seq_idx_j| > 4`
+- each unordered residue pair counted once
+
+Then:
+- `T_p = sum_{(i,j) in C_p} |seq_idx_i - seq_idx_j|`
+
+## Data Sources
 - AlphaFold DB: https://alphafold.ebi.ac.uk/
 - RCSB PDB: https://www.rcsb.org/
 - Ensembl: https://www.ensembl.org/
 - UniProt: https://www.uniprot.org/
 
-## 4. Repository structure
-- `data/source_lists/`: species lists, AlphaFold tar basenames (from local extraction metadata), synthetic PDB IDs.
-- `data/processed/`: processed summary tables (+ packaged supplementary tables if available).
-- `data/sample/`: small real subsamples for quick tests.
-- `src/`: minimal computation + plotting entrypoints.
-- `scripts/`: reproducibility shell wrappers.
-- `docs/`: sources + methods + reproducibility notes.
-- `figures/`: outputs from bundled plotting scripts (and optional copied upstream PNGs).
+## Repository Layout
+- `data/source_lists/`: species lists, AlphaFold source records, designed-protein PDB IDs
+- `data/processed/`: processed summary tables and supplementary tables
+- `data/sample/`: small real-data subsets for quick reproducibility checks
+- `src/`: computation and plotting entrypoints
+- `scripts/`: reproduction wrappers
+- `docs/`: methods, provenance, reproducibility notes
+- `figures/`: generated figures and packaged outputs
 
-## 5. Installation
+## Installation
 - Python >= 3.10
-- `pip install -r requirements.txt`
+- Install dependencies:
+  - `pip install -r requirements.txt`
 
-## 6. Quick test
-- `bash scripts/quick_test.sh`
+## Reproducibility Commands
+- Quick test:
+  - `bash scripts/quick_test.sh`
+- Main figures:
+  - `bash scripts/reproduce_main_figures.sh`
+- Supplementary figures:
+  - `bash scripts/reproduce_supplementary_figures.sh`
 
-## 7. Reproduce main figures
-- `bash scripts/reproduce_main_figures.sh`
+## What BCHET Tests
+This release is organized around falsifiable checks:
+- cross-lineage regime structure in `(I, T, eta)` space
+- designed-vs-natural contrast
+- scaling and length controls
+- bootstrap stability
+- null remapping controls (preserving `eta = I/T` form while breaking biological assignment)
+- structure-level contact-map manifestation
 
-## 8. Reproduce supplementary figures
-- `bash scripts/reproduce_supplementary_figures.sh`
+## Scope and Limitations
+- Raw AlphaFold proteome archives and full PDB/mmCIF collections are not redistributed here due to size and upstream availability.
+- The present `I_{s,p}` uses species-level priors; gene-resolved intron-budget estimation is a future extension.
+- Designed proteins are projected with a minimal intron-budget proxy for contrastive analysis, not biological intron attribution.
 
-## 9. Notes on raw data
-Raw AlphaFold proteome tarballs and PDB/mmCIF archives are large and publicly available; therefore they are not redistributed here.
+## Citation
+If you use this code or processed tables, please cite the associated manuscript/preprint.
+DOI/preprint link will be added once finalized.
 
-## 10. Citation
-If you use this code, please cite the associated preprint (**TODO**: add DOI/biorxiv link when available).
-
-## Known gaps (explicit)
-- `species_list_46.csv:alphafold_url` is **NA** unless/until a verified canonical URL scheme is pinned for each proteome tarball.
-- `species_budget_prior.csv:B` is **NA** because the packaged species summary snapshot does not provide a single scalar species-level B without extra assumptions.
+## Known Gaps (Explicit)
+- `species_list_46.csv:alphafold_url` may remain `NA` until a canonical per-proteome URL mapping is pinned.
+- Some budget-prior fields are proxy-level summaries and should not be interpreted as gene-level ground truth.
