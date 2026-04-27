@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "BCHET Topology Pipeline"
+message: "If you use this software, please cite the associated preprint."
+authors:
+  - family-names: Chen
+    given-names: Junming
+affiliation: "Guilin University of Aerospace Technology"
+year: 2026
+version: "0.1.0"
+repository-code: "https://github.com/tuanminhchen/BCHET_topology"

@@ -1,0 +1,23 @@
+copy bchet_species_summary.csv: OK /Volumes/扩展盘/蛋白质涌现研究/LinearHypo/PlotALL/data/bchet_v7_species_summary.csv
+copy bchet_eta_quantiles_by_species.csv: OK /Volumes/扩展盘/蛋白质涌现研究/LinearHypo/PlotALL/data/bchet_v7_eta_quantiles_by_species.csv
+copy synthetic_proteins_eta.csv: OK /Volumes/扩展盘/蛋白质涌现研究/LinearHypo/PlotALL/data/synthetic_proteins_eta.csv
+copy supplementary_tables/Table_S1_species_eta_summary.csv: OK /Volumes/扩展盘/蛋白质涌现研究/LinearHypo/PlotALL/output/tables/Table_S1_species_eta_summary.csv
+copy supplementary_tables/Table_S2_synthetic_designed_proteins.csv: OK /Volumes/扩展盘/蛋白质涌现研究/LinearHypo/PlotALL/output/tables/Table_S2_synthetic_designed_proteins.csv
+copy supplementary_tables/Table_S3_alternative_topology_definitions.csv: OK /Volumes/扩展盘/蛋白质涌现研究/LinearHypo/PlotALL/output/tables/Table_S3_alternative_topology_definitions.csv
+copy supplementary_tables/Table_S4_null_remapping_statistics.csv: OK /Volumes/扩展盘/蛋白质涌现研究/LinearHypo/PlotALL/output/tables/Table_S4_null_remapping_statistics.csv
+copy supplementary_tables/BCHET_Supplementary_Tables.xlsx: OK /Volumes/扩展盘/蛋白质涌现研究/LinearHypo/PlotALL/output/tables/BCHET_Supplementary_Tables.xlsx
+copy supplementary_tables/Supplementary_Tables_Readme.txt: OK /Volumes/扩展盘/蛋白质涌现研究/LinearHypo/PlotALL/output/tables/Supplementary_Tables_Readme.txt
+wrote data/processed/species_budget_prior.csv (B intentionally NA; prior from meta)
+wrote species_list_46.csv rows=46 (alphafold_url left NA; not verified canonical URLs)
+wrote alphafold_species_files.txt unique_lines=46
+wrote synthetic_pdb_ids.txt unique=94 (parsed from synthetic protein_id tokens)
+wrote sample_natural_proteins.csv rows=150 from targets=['human', 'yeast', 'ecoli', 'mouse', 'schpo']
+wrote sample_synthetic_proteins.csv rows=94 (first 200 rows)
+copied Synth/build_synthetic_dataset.py -> src/build_synthetic_dataset.py
+staged upstream main png: Figure2_pan_species_figure6_style_dark.png
+staged upstream main png: Figure3_refined.png
+staged upstream main png: Figure4_final_PNAS_refined.png
+staged upstream main png: Figure5_unified_phase_final.png
+staged upstream supplementary pngs: 9
+
+MISSING INPUTS: none

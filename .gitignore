@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.venv/
+raw/
+*.tar
+large_data/
+work/
+tmp/
+.cache/
+
+*.cif
+*.pdb
+
+# Ignore large/binary dumps by default, but allow packaged processed *.csv.gz (if added later)
+*.gz
+!data/processed/*.csv.gz
+
+output/
+figures/**/*.tmp

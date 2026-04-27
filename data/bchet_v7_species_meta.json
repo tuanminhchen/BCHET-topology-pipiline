@@ -1,0 +1,374 @@
+{
+  "description": "AlphaFold 46-proteome keys; phylo_rank 用于图横轴进化/复杂度顺序；intron_over_cds_prior 为无 GTF 时物种级内含子/CDS 长度比先验（η 代理，可替换为真实注释）。",
+  "version": "7.0",
+  "species": {
+    "metja": {
+      "taxid": 243232,
+      "scientific_name": "Methanocaldococcus jannaschii",
+      "domain": "archaea",
+      "realm": "archaea",
+      "phylo_rank": 1,
+      "intron_over_cds_prior": 0.0
+    },
+    "9noca1": {
+      "taxid": 1133849,
+      "scientific_name": "Nocardia brasiliensis",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 2,
+      "intron_over_cds_prior": 0.0
+    },
+    "camje": {
+      "taxid": 192222,
+      "scientific_name": "Campylobacter jejuni",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 3,
+      "intron_over_cds_prior": 0.0
+    },
+    "ecoli": {
+      "taxid": 83333,
+      "scientific_name": "Escherichia coli K-12",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 4,
+      "intron_over_cds_prior": 0.0
+    },
+    "haein": {
+      "taxid": 71421,
+      "scientific_name": "Haemophilus influenzae",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 5,
+      "intron_over_cds_prior": 0.0
+    },
+    "helpy": {
+      "taxid": 85962,
+      "scientific_name": "Helicobacter pylori",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 6,
+      "intron_over_cds_prior": 0.0
+    },
+    "kleph": {
+      "taxid": 1125630,
+      "scientific_name": "Klebsiella pneumoniae",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 7,
+      "intron_over_cds_prior": 0.0
+    },
+    "mycle": {
+      "taxid": 272631,
+      "scientific_name": "Mycobacterium leprae",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 8,
+      "intron_over_cds_prior": 0.0
+    },
+    "myctu": {
+      "taxid": 83332,
+      "scientific_name": "Mycobacterium tuberculosis",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 9,
+      "intron_over_cds_prior": 0.0
+    },
+    "neig1": {
+      "taxid": 242231,
+      "scientific_name": "Neisseria gonorrhoeae",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 10,
+      "intron_over_cds_prior": 0.0
+    },
+    "pseae": {
+      "taxid": 208964,
+      "scientific_name": "Pseudomonas aeruginosa",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 11,
+      "intron_over_cds_prior": 0.0
+    },
+    "salty": {
+      "taxid": 99287,
+      "scientific_name": "Salmonella enterica",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 12,
+      "intron_over_cds_prior": 0.0
+    },
+    "shids": {
+      "taxid": 300267,
+      "scientific_name": "Shigella dysenteriae",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 13,
+      "intron_over_cds_prior": 0.0
+    },
+    "staa8": {
+      "taxid": 93061,
+      "scientific_name": "Staphylococcus aureus",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 14,
+      "intron_over_cds_prior": 0.0
+    },
+    "strr6": {
+      "taxid": 171101,
+      "scientific_name": "Streptococcus pneumoniae",
+      "domain": "bacteria",
+      "realm": "bacteria",
+      "phylo_rank": 15,
+      "intron_over_cds_prior": 0.0
+    },
+    "yeast": {
+      "taxid": 559292,
+      "scientific_name": "Saccharomyces cerevisiae",
+      "domain": "eukaryota",
+      "realm": "fungi",
+      "phylo_rank": 16,
+      "intron_over_cds_prior": 0.05
+    },
+    "schpo": {
+      "taxid": 284812,
+      "scientific_name": "Schizosaccharomyces pombe",
+      "domain": "eukaryota",
+      "realm": "fungi",
+      "phylo_rank": 17,
+      "intron_over_cds_prior": 0.9
+    },
+    "canal": {
+      "taxid": 237561,
+      "scientific_name": "Candida albicans",
+      "domain": "eukaryota",
+      "realm": "fungi",
+      "phylo_rank": 18,
+      "intron_over_cds_prior": 1.2
+    },
+    "dicdi": {
+      "taxid": 44689,
+      "scientific_name": "Dictyostelium discoideum",
+      "domain": "eukaryota",
+      "realm": "protist",
+      "phylo_rank": 19,
+      "intron_over_cds_prior": 3.5
+    },
+    "plaf7": {
+      "taxid": 36329,
+      "scientific_name": "Plasmodium falciparum",
+      "domain": "eukaryota",
+      "realm": "protist",
+      "phylo_rank": 20,
+      "intron_over_cds_prior": 6.0
+    },
+    "tryb2": {
+      "taxid": 185431,
+      "scientific_name": "Trypanosoma brucei",
+      "domain": "eukaryota",
+      "realm": "protist",
+      "phylo_rank": 21,
+      "intron_over_cds_prior": 5.0
+    },
+    "trycc": {
+      "taxid": 353153,
+      "scientific_name": "Trypanosoma cruzi",
+      "domain": "eukaryota",
+      "realm": "protist",
+      "phylo_rank": 22,
+      "intron_over_cds_prior": 5.0
+    },
+    "leiin": {
+      "taxid": 5671,
+      "scientific_name": "Leishmania infantum",
+      "domain": "eukaryota",
+      "realm": "protist",
+      "phylo_rank": 23,
+      "intron_over_cds_prior": 5.0
+    },
+    "9pezi1": {
+      "taxid": 100816,
+      "scientific_name": "Madurella mycetomatis",
+      "domain": "eukaryota",
+      "realm": "fungi",
+      "phylo_rank": 24,
+      "intron_over_cds_prior": 1.5
+    },
+    "9euro1": {
+      "taxid": 86049,
+      "scientific_name": "Cladophialophora carrionii",
+      "domain": "eukaryota",
+      "realm": "fungi",
+      "phylo_rank": 25,
+      "intron_over_cds_prior": 1.5
+    },
+    "9euro2": {
+      "taxid": 1442368,
+      "scientific_name": "Fonsecaea pedrosoi",
+      "domain": "eukaryota",
+      "realm": "fungi",
+      "phylo_rank": 26,
+      "intron_over_cds_prior": 1.5
+    },
+    "ajecg": {
+      "taxid": 447093,
+      "scientific_name": "Histoplasma capsulatum",
+      "domain": "eukaryota",
+      "realm": "fungi",
+      "phylo_rank": 27,
+      "intron_over_cds_prior": 1.5
+    },
+    "parba": {
+      "taxid": 502779,
+      "scientific_name": "Paracoccidioides lutzii",
+      "domain": "eukaryota",
+      "realm": "fungi",
+      "phylo_rank": 28,
+      "intron_over_cds_prior": 1.5
+    },
+    "spos1": {
+      "taxid": 1391915,
+      "scientific_name": "Sporothrix schenckii",
+      "domain": "eukaryota",
+      "realm": "fungi",
+      "phylo_rank": 29,
+      "intron_over_cds_prior": 1.5
+    },
+    "arath": {
+      "taxid": 3702,
+      "scientific_name": "Arabidopsis thaliana",
+      "domain": "eukaryota",
+      "realm": "plant",
+      "phylo_rank": 30,
+      "intron_over_cds_prior": 18.0
+    },
+    "orysj": {
+      "taxid": 39947,
+      "scientific_name": "Oryza sativa",
+      "domain": "eukaryota",
+      "realm": "plant",
+      "phylo_rank": 31,
+      "intron_over_cds_prior": 18.0
+    },
+    "maize": {
+      "taxid": 4577,
+      "scientific_name": "Zea mays",
+      "domain": "eukaryota",
+      "realm": "plant",
+      "phylo_rank": 32,
+      "intron_over_cds_prior": 18.0
+    },
+    "soybn": {
+      "taxid": 3847,
+      "scientific_name": "Glycine max",
+      "domain": "eukaryota",
+      "realm": "plant",
+      "phylo_rank": 33,
+      "intron_over_cds_prior": 18.0
+    },
+    "bruma": {
+      "taxid": 6279,
+      "scientific_name": "Brugia malayi",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 34,
+      "intron_over_cds_prior": 17.0
+    },
+    "caeel": {
+      "taxid": 6239,
+      "scientific_name": "Caenorhabditis elegans",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 35,
+      "intron_over_cds_prior": 17.0
+    },
+    "drame": {
+      "taxid": 318479,
+      "scientific_name": "Dracunculus medinensis",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 36,
+      "intron_over_cds_prior": 17.0
+    },
+    "oncvo": {
+      "taxid": 6282,
+      "scientific_name": "Onchocerca volvulus",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 37,
+      "intron_over_cds_prior": 17.0
+    },
+    "schma": {
+      "taxid": 6183,
+      "scientific_name": "Schistosoma mansoni",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 38,
+      "intron_over_cds_prior": 17.0
+    },
+    "strer": {
+      "taxid": 6248,
+      "scientific_name": "Strongyloides stercoralis",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 39,
+      "intron_over_cds_prior": 17.0
+    },
+    "tritr": {
+      "taxid": 36087,
+      "scientific_name": "Trichuris trichiura",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 40,
+      "intron_over_cds_prior": 17.0
+    },
+    "wucba": {
+      "taxid": 6293,
+      "scientific_name": "Wuchereria bancrofti",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 41,
+      "intron_over_cds_prior": 17.0
+    },
+    "drome": {
+      "taxid": 7227,
+      "scientific_name": "Drosophila melanogaster",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 42,
+      "intron_over_cds_prior": 24.0
+    },
+    "danre": {
+      "taxid": 7955,
+      "scientific_name": "Danio rerio",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 43,
+      "intron_over_cds_prior": 26.0
+    },
+    "human": {
+      "taxid": 9606,
+      "scientific_name": "Homo sapiens",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 44,
+      "intron_over_cds_prior": 32.0
+    },
+    "mouse": {
+      "taxid": 10090,
+      "scientific_name": "Mus musculus",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 45,
+      "intron_over_cds_prior": 30.0
+    },
+    "rat": {
+      "taxid": 10116,
+      "scientific_name": "Rattus norvegicus",
+      "domain": "eukaryota",
+      "realm": "metazoa",
+      "phylo_rank": 46,
+      "intron_over_cds_prior": 30.0
+    }
+  }
+}
